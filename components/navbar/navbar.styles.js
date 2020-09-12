@@ -12,11 +12,12 @@ export const NavBar = styled(animated.nav)`
 `;
 
 export const FlexContainer = styled.div`
-  max-width: 126rem;
+  max-width: 122rem;
   display: flex;
   margin: auto;
   justify-content: space-between;
   height: 5rem;
+  padding: 0px 2rem;
 `;
 
 export const NavLinks = styled(animated.ul)`
@@ -43,6 +44,11 @@ export const NavLinks = styled(animated.ul)`
 
     @media (max-width: 768px) {
       display: none;
+    }
+
+    &.activeLink {
+      color: #fdcb6e;
+      border-bottom: 1px solid #fdcb6e;
     }
   }
 `;

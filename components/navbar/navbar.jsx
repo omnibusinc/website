@@ -3,6 +3,7 @@ import Brand from '../brand/brand';
 import BurgerMenu from '../burger-menu/burger-menu';
 import CollapseMenu from '../collapse-menu/collapse-menu';
 import { useSpring, config } from "react-spring";
+import Link from '../link/link.component';
 
 const Navbar = ({ navbarState, handleNavbar }) => {
   const barAnimation = useSpring({
@@ -23,10 +24,10 @@ const Navbar = ({ navbarState, handleNavbar }) => {
         <FlexContainer>
           <Brand />
           <NavLinks style={linkAnimation}>
-            <a href="/">about us</a>
-            <a href="/">clients</a>
-            <a href="/">technologies</a>
-            <a href="/">working with us</a>
+            <Link href="/about"><a>about us</a></Link>
+            <Link href="/clients"><a>clients</a></Link>
+            <Link href="/technologies"><a>technologies</a></Link>
+            <Link href="/working"><a>working with us</a></Link>
           </NavLinks>
           <BurgerWrapper>
             <BurgerMenu

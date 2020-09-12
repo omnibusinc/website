@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const FooterWrapper = styled.div`
   width: 100%;
+  max-width: 126rem;
   height: 3rem;
   border-top: 1px solid #eaeaea;
   display: flex;

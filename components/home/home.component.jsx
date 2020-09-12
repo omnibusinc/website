@@ -9,7 +9,7 @@ const HomeComponent = ({movies, searchMovies}) => {
             {
                 (movies && movies.length > 0 && <MovieList movies={movies} />)
             } */}
-            welcome
+            Home
         </HomeWrapper>
     )
 }

@@ -4,7 +4,7 @@ import { BrandWrapper, CompanyName, Image} from './brand.styles';
 const Brand = () => {
   return (
     <BrandWrapper>
-      <Image src={logo} alt="Company Logo" />
+      <Image src={logo} alt="Omnibus Interactive" />
       <CompanyName>Omnibus Interactive</CompanyName>
     </BrandWrapper>
   );
